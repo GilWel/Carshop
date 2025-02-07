@@ -23,6 +23,12 @@ export default function NavBar(): JSX.Element {
         <li className={styles.listElement}>
           <NavLink to="/IpLocation" className={styles.link}> IpLocation</NavLink>
         </li>
+        <li className={styles.listElement}>
+          <NavLink to="/Coctail" className={styles.link}> Coctail</NavLink>
+        </li>
+        <li className={styles.listElement}>
+          <NavLink to="/Playground" className={styles.link}> Playground</NavLink>
+        </li>
         
       </ul>
     </nav>
