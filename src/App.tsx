@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import Layout from "./components/Layout/Layout";
+import Carshop from "./components/Carshop/Carshop";
+import Counter from "./components/counter/Counter";
+import UserPage from "./components/userPage/UserPage";
+import ProducktDescription from "./components/productDescription/ProducktDescription";
+import FetchChuckNorris from "./components/fetchChuckNorris/FetchChuckNorris";
+import IpLocation from "./components/IpLocation/IpLocation";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App(): JSX.Element {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="Carshop" element={<Carshop />} />
+          <Route path="ProducktDescription" element={<ProducktDescription />} />
+          <Route path="Counter" element={<Counter />} />
+          <Route path="UserPage" element={<UserPage />} />
+          <Route path="FetchChuckNorris" element={<FetchChuckNorris />} />
+          <Route path="IpLocation" element={<IpLocation />} />
+        </Route>
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

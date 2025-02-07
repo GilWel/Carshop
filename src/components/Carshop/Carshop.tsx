@@ -12,6 +12,9 @@ export default function Carshop ():JSX.Element{
             <Car brand="Opel" color="yellow" />
             <Car brand="Lada" color="red" />
             <Car brand="Audi" color="black" />
+
+            <h2>Bikes</h2>
+            
             <Bike gears= {15} brand="Yawa" price={5000} color="green" />
             <Bike gears= {25} brand="Honda" price={15000} color="blue"/>
             <Bike gears= {35} brand="BMW" price={25000} color="red"/>
