@@ -9,6 +9,8 @@ import FetchChuckNorris from "./components/fetchChuckNorris/FetchChuckNorris";
 import IpLocation from "./components/IpLocation/IpLocation";
 import Coctail from "./components/Coctail/Coctail";
 import Playground from "./components/Playground/Playground";
+import ProductPage from "./components/ProductPage/ProductPage";
+
 
 function App(): JSX.Element {
   return (
@@ -23,6 +25,7 @@ function App(): JSX.Element {
           <Route path="IpLocation" element={<IpLocation />} />
           <Route path="Coctail" element={<Coctail />} />
           <Route path="Playground" element={<Playground />} />
+          <Route path="/ProducktDescription/:productId" element={<ProductPage />} />
         </Route>
       </Routes>
     </>
