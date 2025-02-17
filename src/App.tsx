@@ -10,6 +10,7 @@ import IpLocation from "./components/IpLocation/IpLocation";
 import Coctail from "./components/Coctail/Coctail";
 import Playground from "./components/Playground/Playground";
 import ProductPage from "./components/ProductPage/ProductPage";
+import DataFetcher from "./components/dataFetcher/DataFetcher";
 
 
 function App(): JSX.Element {
@@ -26,6 +27,7 @@ function App(): JSX.Element {
           <Route path="Coctail" element={<Coctail />} />
           <Route path="Playground" element={<Playground />} />
           <Route path="/ProducktDescription/:productId" element={<ProductPage />} />
+          <Route path="/DataFetcher" element={<DataFetcher />} />
         </Route>
       </Routes>
     </>

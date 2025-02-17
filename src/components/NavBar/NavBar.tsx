@@ -48,6 +48,10 @@ export default function NavBar(): JSX.Element {
             {" "}
             Playground
           </NavLink>
+          <NavLink to="/DataFetcher" className={styles.link}>
+            {" "}
+            DataFetcher
+          </NavLink>
         </li>
       </ul>
     </nav>
